@@ -67,12 +67,3 @@ h2 {
     width: 49%;
   }
 }
-
-/* mobile */
-@media (max-width: 767px) {
-  .box1,
-  .box2,
-  .box3 {
-    width: auto;
-  }
-}
