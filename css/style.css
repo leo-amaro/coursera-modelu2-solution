@@ -12,9 +12,7 @@
   margin: 15px;
 }
 
-.box1,
-.box2,
-.box3 {
+.box {
   border: 1px solid black;
   float: left;
   height: 200px;
@@ -30,6 +28,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  border: 1px solid black;
 }
 
 h2 {
@@ -56,26 +55,24 @@ h2 {
 
 /* desktop */
 @media (min-width: 992px) {
-  .box1,
-  .box2,
-  .box3 {
+  .box {
     width: 32.3%;
   }
 }
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 991px) {
-  .box1,
-  .box2 {
+  .box:nth-child(2),
+  .box:nth-child(3) {
     width: 49%;
   }
 }
 
 /* mobile */
 @media (max-width: 767px) {
-    .box1,
-    .box2,
-    .box3 {
-      width: auto;
-    }
+  .box1,
+  .box2,
+  .box3 {
+    width: auto;
+  }
 }
